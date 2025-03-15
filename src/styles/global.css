@@ -1,0 +1,149 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 🌈 Global Color Variables */
+:root {
+    --primary-color: #27215B;      /* Main Accent Color */
+    --primary-dark: #000000;       /* Darker Shade for Hover */
+    --background-gradient: linear-gradient(to right, #A9C1FF, #C9D8FF, #EFD1FF, #E5BBFF);
+    --text-color: #000000;            /* Default Text Color */
+    --gold-text: #D7A964;            /* Light Text for Contrast */
+    --border-color: #dedede;   
+    --border-color-gold: #D7A964;          /* Border Color */       /* Border Color */
+    --shadow-color: #27215bb1; /* Light Shadow */
+    --button-bg: #27215B;
+    --button-hover: #none;
+}
+
+/* Full Page Background with Gradient */
+body {
+    background: var(--background-gradient);
+    min-height: 100vh;
+    color: var(--text-color);
+    display: block;
+    max-width: 1200px;
+    width: 95%;
+    margin: 4rem auto;
+    padding: 20px;
+}
+
+
+/* Animated Links */
+/* 🌟 Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 10px;
+    border-radius: 10px;
+    position: fixed; /* Fixed at the top */
+    width: 95%;
+    max-width: 1150px;
+    top: 0;
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0px 8px 20px var(--shadow-color);
+}
+
+/* Apply Glass Effect to Forms */
+form.glass-bg {
+    background: var(--form-bg); /* Use the same glassmorphism background */
+    backdrop-filter: blur(15px); /* Increase blur for more depth */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+input, button {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Smooth Button Hover */
+button {
+    background: var(--primary-color);
+    color: var(--gold-text);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Glassmorphism Background */
+.glass-bg {
+    padding: 2rem;
+    background: linear-gradient(237deg, rgba(255, 255, 255, 0.2) 45%, rgba(255, 255, 255, 0.2) 18%);
+    border-radius: 9px;
+    box-shadow: 0px 10px 30px var(--shadow-color);
+    backdrop-filter: blur(10px);
+}
+
+/* Flexbox Layout for Centering */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Layout for Sections */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* ✅ Responsive Design */
+@media (max-width: 480px) {
+    .page-container {
+        width: 95%;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        width: 90%;
+        padding: 18px;
+        margin: 30px auto;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page-container {
+        max-width: 900px;
+        padding: 20px;
+        margin: 40px auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-container {
+        max-width: 1400px;
+        padding: 25px;
+    }
+}

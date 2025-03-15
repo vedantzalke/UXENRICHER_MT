@@ -1,0 +1,117 @@
+/* src/styles/Auth.css */
+
+/* ===== Page Background ===== */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* ===== Glassmorphism Form Container ===== */
+  .auth-box {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.25); /* semi-transparent white */
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ===== Logo ===== */
+  .auth-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== Input Fields ===== */
+  .auth-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .auth-input:focus {
+    border-color: #27215b;
+  }
+  
+  /* ===== Forgot Password Link ===== */
+  .forgot-password-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Buttons ===== */
+  .auth-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  /* Primary Button (e.g., Login, Sign Up) */
+  .primary-btn {
+    background: #27215b;
+    color: #fff;
+  }
+  
+  .primary-btn:hover {
+    background: #1a1845;
+  }
+  
+  /* Google Login Button */
+  .google-btn {
+    background: #fff;
+    color: #27215b;
+    border: 2px solid #27215b;
+  }
+  
+  .google-btn:hover {
+    background: #27215b;
+    color: #fff;
+  }
+  
+  /* ===== Alternative Links (Toggle between Login/Sign Up) ===== */
+  .auth-alt-links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .auth-alt-links a {
+    color: #27215b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .auth-alt-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-alt-links span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  

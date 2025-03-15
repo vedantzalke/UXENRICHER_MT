@@ -1,0 +1,152 @@
+/* ✅ Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* ✅ Logo */
+.logo img {
+    height: 40px;
+}
+
+/* ✅ Navigation Links */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #27215B;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #5b2121;
+}
+.notification-badge {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+/* ✅ User Avatar and Dropdown Container */
+.user-dropdown {
+    cursor: pointer;
+    position: relative;
+}
+.avatar-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Notification Badge */
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+/* ✅ Avatar */
+.avatar {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ✅ Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #ffffff95;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 9px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+text-decoration: underline;
+}
+
+/* Logout button styled in red */
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ✅ Mobile Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ✅ Responsive Mobile Menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

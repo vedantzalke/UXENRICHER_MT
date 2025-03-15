@@ -1,0 +1,139 @@
+/* src/styles/About.css */
+:root {
+    --primary-color: #27215B;
+    --accent-color: #007bff;
+    --background-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;
+    --border-radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-page {
+    margin: 0px auto;
+    padding: 20px;
+        font-family: var(--font-family);
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  /* Existing Sections */
+  .about-overview,
+  .about-features,
+  .about-flow,
+  .about-value,
+  .about-contact{
+    margin-bottom: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-overview h2,
+  .about-features h2,
+  .about-flow h2,
+  .about-value h2,
+  .about-contact h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .about-overview p,
+  .about-flow p,
+  .about-value p,
+  .about-contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* New Slider Section */
+  .about-slider {
+    margin: 40px 0;
+  }
+  
+  .slide {
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .slide h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .slide-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .slide-section {
+    flex: 1 1 40%;
+    margin: 10px;
+  }
+  
+  .slide-section h4 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+  }
+  
+  .slide-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .about-slider{
+    text-align: center;
+  }
+  /* Slick slider dot styles */
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: var(--accent-color);
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: var(--primary-color);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .about-header h1 {
+      font-size: 2rem;
+    }
+    
+    .slide h3 {
+      font-size: 1.8rem;
+    }
+    
+    .slide-section h4 {
+      font-size: 1.3rem;
+    }
+    
+    .slide-section p,
+    .about-overview p,
+    .about-flow p,
+    .about-value p,
+    .about-contact p {
+      font-size: 0.9rem;
+    }
+  }
+  

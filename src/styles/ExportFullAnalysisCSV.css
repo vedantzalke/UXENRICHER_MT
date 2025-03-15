@@ -1,0 +1,19 @@
+.export-dashboard {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .export-dashboard button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #27215B;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .export-dashboard button:hover {
+    background: #1a1845;
+  }
+  

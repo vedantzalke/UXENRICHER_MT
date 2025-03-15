@@ -1,0 +1,103 @@
+.issues-table {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+  .issues-table h2 {
+    margin-bottom: 15px;
+    color: #27215B;
+    font-weight: 600;
+  }
+  .issue-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 10px 0;
+    border: 0.5px solid #000000;
+    cursor: pointer;
+  }
+  .issue-row.glass-bg {
+    background: rgba(255, 255, 255, 0.327);
+    box-shadow: none;
+  }
+  
+  /* Engagement */
+  .issue-engagement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #27215B;
+    margin-top: 6px;
+  }
+  .engagement-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .engagement-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  /* Issue Info */
+  .issue-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 15px;
+    color: #27215B;
+  }
+  .issue-category p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .post-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0.5rem 0;
+  }
+  .tag {
+    background-color: #ffffff;
+    color: #241f59;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+  }
+  .first-tag {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Issue User */
+  .issue-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .issue-user img {
+    width: 45px;
+    height: 45px;
+  }
+  .issue-date p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #27215B;
+    text-align: center;
+  }
+  
+  /* Ellipsis Icon */
+  .ellipsis-icon {
+    font-size: 1.8rem;
+    color: #27215B;
+    cursor: pointer;
+  }
+  

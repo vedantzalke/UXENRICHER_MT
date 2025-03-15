@@ -1,0 +1,115 @@
+/* Leaderboard.css */
+
+/* Page Container */
+.leaderboard-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.leaderboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Date Range Filter */
+.date-range-filter {
+  margin-bottom: 10px;
+}
+
+/* Most Filter */
+.most-filter {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.most-filter label {
+  font-size: 14px;
+}
+
+.most-filter select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Leaderboard Tabs */
+.leaderboard-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.leaderboard-tabs button {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.leaderboard-tabs button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Main Leaderboard Content */
+.leaderboard-content {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* CompanyLeaderboard Component Styles */
+.leaderboard {
+  width: 100%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #27215B;
+  font-weight: 600;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.leaderboard th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.leaderboard tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+/* Coming Soon Message */
+.coming-soon {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: #777;
+}

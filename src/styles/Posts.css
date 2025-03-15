@@ -1,0 +1,286 @@
+/* ---------------------------
+   POSTS PAGE STYLES
+--------------------------- */
+.posts-page {
+  min-height: 100vh;
+  padding: 0px 10px;
+  /* Font family can be inherited from global or set here */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The top box for creating a new post (avatar + button) */
+.post-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Avatar image in the "Share your UX experience..." box */
+.profile-img {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* The "Share your UX experience..." button */
+.post-button {
+  flex: 1;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Category buttons container */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 40px;
+  padding: 5px 0;
+}
+
+/* Individual category buttons */
+.category-btn {
+  padding: 8px 16px;
+  border-radius: 7px;
+  border: 2px solid #D7A964;
+  background: none;
+  color: #27215B;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.category-btn.active {
+  background: #27215B;
+  border: 3px solid #27215B;
+  color: #D7A964;
+}
+
+.category-btn:hover {
+  background: #27215B;
+  color: #D7A964;
+}
+
+/* Filter container for search + sort dropdown */
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Search input field */
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Sort label and dropdown */
+.filter label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.filter select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.post-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Optional spacing between cards */
+  width: 100%;
+}
+
+/* ---------------------------
+   PROFILE & ACTIVITY STYLES
+--------------------------- */
+
+/* Overall Profile Container */
+.profile-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Tab Navigation (Profile Info / Activity) */
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.profile-tabs button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Profile Card (Info) */
+.profile-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-img.icon {
+  font-size: 120px;
+  color: #ccc;
+}
+
+.divider {
+  margin: 15px 0;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  text-align: left;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.logout-btn,
+.edit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn {
+  background: #d9534f;
+  color: #fff;
+}
+
+.edit-btn {
+  background: #5bc0de;
+  color: #fff;
+}
+
+/* Activity Section */
+.activity-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.activity-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.activity-tabs button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.activity-tabs button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.activity-content {
+  padding: 10px;
+}
+
+.activity-content h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Items for Comments, Upvotes, Downvotes */
+.comment-item,
+.upvote-item,
+.downvote-item {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment-post {
+  font-size: 12px;
+  color: #555;
+}
+
+.upvote-item p,
+.downvote-item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  text-align: center;
+}
+
+/* ---------------------------
+   Additional Global Styles
+--------------------------- */
+/* You can add any additional global styles here */

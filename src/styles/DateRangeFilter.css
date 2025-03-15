@@ -1,0 +1,11 @@
+.date-range-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .date-range-filter label {
+    font-weight: 600;
+    color: #27215B;
+  }
+  

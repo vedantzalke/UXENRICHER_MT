@@ -1,0 +1,19 @@
+.company-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .company-filter label {
+    font-weight: 600;
+    color: #27215B;
+  }
+  
+  .company-filter select {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.85rem;
+    outline: none;
+  }
+  

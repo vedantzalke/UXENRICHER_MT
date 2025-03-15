@@ -1,0 +1,128 @@
+/* Main Tabs */
+.main-tabs {
+  display: flex;
+  margin: 2px 0;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Changed from nowrap */
+  justify-content: space-between;
+  align-content: center;
+}
+.main-tabs button {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.main-tabs button.active {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+/* Company Analysis Section */
+.company-analysis-section {
+  border-radius: 8px;
+}
+
+/* Company Analysis Sub-Tabs */
+.company-analysis-tabs {
+  display: flex;
+  flex-wrap: wrap; /* Changed from nowrap */
+  justify-content: space-between;
+  align-content: center;
+}
+.company-analysis-tabs button {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  height: 2.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+.company-analysis-tabs button.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Inner Graph Tabs */
+.graph-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.graph-tabs button {
+  background: #e0e0e0;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.graph-tabs button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Graph Content */
+.graph-content {
+  padding: 20px;
+  border-radius: 6px;
+}
+.graph-content p{
+  padding-bottom: 20px;
+  text-align: center;
+}
+/* Details Filters Section */
+.details-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.filter-options, .time-filters, .sorting-options {
+  margin: 5px;
+}
+.filter-options button,
+.time-filters button {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.filter-options button.active,
+.time-filters button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Additional Details Controls */
+.details-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-controls .tag-filter-control,
+.details-controls .most-filter,
+.details-controls .sorting-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.details-controls input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+.category-filter{
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+

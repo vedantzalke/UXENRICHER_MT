@@ -1,0 +1,112 @@
+/* src/styles/Footer.css */
+
+/* The footer container */
+.footer-container {
+  width: 100%;
+  position: sticky;
+  color:  #000000;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 40px; /* Not pinned at bottom */
+  align-items: center;
+}
+
+/* Main content within the footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* Layout in a row, wrapping if needed */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side: Logo + Navigation */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo styling */
+.footer-logo {
+  height: 40px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+/* Navigation list styling */
+.footer-nav {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation links */
+.footer-nav li a {
+  color: #110d6e;
+  text-decoration: none;
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  color: #664646;
+  text-decoration: underline;
+
+}
+
+/* Newsletter subscription area */
+.newsletter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Input field */
+.newsletter-section input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  min-width: 250px;
+  font-size: 14px;
+}
+
+/* Subscribe button */
+.newsletter-section button {
+  background: #fff;
+  color: var(--primary-color, #27215B);
+  border: 2px solid var(--primary-color, #27215B);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.newsletter-section button:hover {
+  background: #eaeaea;
+}
+
+/* Footer bottom text */
+.footer-bottom-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive: stack items on smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-left {
+    flex-direction: column;
+  }
+}

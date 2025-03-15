@@ -1,0 +1,368 @@
+/* Main card container */
+.post-card {
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  color: #333;
+}
+
+/* Header section: avatar, user info, date, etc. */
+.post-card-header {
+  display: flex;
+  justify-content: space-between; /* Date goes to the right */
+  align-items: flex-start;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Left side: avatar + user details */
+.post-card-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.post-card-userinfo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.post-card-userinfo-detail{
+  display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      gap: 2px;
+}
+.post-card-username {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.post-card-role {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Right side: date text */
+.post-card-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 5px; /* Slight top margin to align with avatar row */
+}
+
+/* The ellipsis (3-dot) options icon */
+.post-card-options-container {
+  position: relative;
+}
+
+.post-card-options {
+  font-size: 1.2rem;
+  color: #999;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Dropdown for "Report Post" */
+.options-dropdown {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.options-dropdown button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.options-dropdown button:hover {
+  background: #f5f5f5;
+}
+
+/* Divider below header */
+.post-divider {
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin: 10px 0 15px;
+}
+
+/* Category and Title grouping (as in screenshot) */
+.post-header-info {
+  display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+}
+
+/* Category style (e.g., "Issues", "Bothers") */
+.post-card-category {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #241f59;
+  text-decoration-thickness: 2px;
+  color: #241f59;
+  padding: 3px 8px;
+  margin-bottom: 5px;
+}
+
+/* Post Title (e.g., "Issue in Quora...") */
+.post-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+  color: #241f59;
+}
+
+/* Tags (e.g., Quora, Bug, Not Working) */
+.post-card-tags-container{
+  margin-left: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      gap: 4.2rem;
+}
+.post-card-tags {
+  margin: 8px 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.post-card-tags .tag-icon {
+  font-size: 1rem;
+  color: #241f59;
+}
+
+.tag {
+  /* Common tag styling */
+  padding: 3px 8px;
+  margin-right: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: #241f59;
+}
+
+.first-tag {
+  background-color: transparent;
+  color: #241f59;
+  font-size: large;
+  font-weight: 900;
+}
+
+
+/* Post description text */
+.post-card-description {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #000000;
+}
+
+/* Read More link styling */
+.post-card-description .read-more {
+  color: #241f59;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Fixed thumbnail container */
+.post-card-media {
+  margin: 10px auto 15px;  /* Center horizontally with auto left/right margins */
+  display: flex;           /* Enable Flexbox */
+  align-items: center;     /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  max-width: 600px;        /* Adjust as needed */
+  height: 600px;           /* Fixed height for thumbnails */
+  text-align: center;      /* Optional if you still have text to center */
+}
+
+.post-card-media img,
+.slider-image {
+  max-width: 100%;
+  border-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #b80202;
+}
+
+/* Image Slider */
+.image-slider {
+  position: relative;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.prev-btn {
+  left: -5rem;
+}
+
+.next-btn {
+  right: -5rem;
+}
+
+/* Modal navigation buttons */
+.modal-prev-btn,
+.modal-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1001;
+}
+
+.modal-prev-btn {
+  left: 10px;
+}
+
+.modal-next-btn {
+  right: 10px;
+}
+
+/* Media Modal Overlay */
+.media-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.media-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/* Close Button */
+.close-media-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Full Media (Image or Video) */
+.full-media {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Footer: upvote/downvote, comment, share */
+.post-engagement {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.post-engagement button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+  transition: color 0.2s ease;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+
+/* Example classes if you want to further style these buttons individually */
+.upvote-btn svg,
+.downvote-btn svg,
+.comment-btn svg,
+.share-btn svg {
+  font-size: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .post-card {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  .post-card-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .post-card-username {
+    font-size: 0.95rem;
+  }
+  .post-card-role {
+    font-size: 0.8rem;
+  }
+  .post-card-date {
+    font-size: 0.75rem;
+  }
+  .post-card-title {
+    font-size: 1rem;
+  }
+  .post-card-description {
+    font-size: 0.85rem;
+  }
+  .post-card-category {
+    font-size: 0.8rem;
+  }
+}

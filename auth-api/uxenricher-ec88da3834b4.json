@@ -1,13 +1,13 @@
 {
   "type": "service_account",
   "project_id": "uxenricher",
-  "private_key_id": "ec88da3834b404623153cb43c28a06bc02ee7c8c",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDS5Qae9mIIYa5D\nvl/wgrrmFVYGk5+Ntd2u7yX62xhiqzdkE2PFcITIy1KkJ8V/SzuyUfe77GTSWQhe\nyB0Wk5fbFUdLvY/lZTVLp/FeSlwrOoQrcUy5dtcejwZRFB6Jl8qcW+wd0bGxhV6j\nERmxmvLrCtPxJY1NV0NMg89Tp2UwyNqGvar4bs7H2uomTLx8ezvQJcWyf8U3oE49\nM+fYDPYcELl/BiM3EPgKGRTP3B189Rmxg5K5YWR08L/SwO8HwPpkf//eQjeAg0TS\nMZkIAgfVEkZjHcpJJ1BIf2uPwR29rt/TsRdN1t140dVTnCHJaWpxLyWr+/ahWZfW\n+fjtnfMNAgMBAAECggEAEISbNDwAhCm1xue5kc0veyzHIuHmSz4SyaxArt6ru4iv\nteErPUWO75TgmWu7Co7CM3k7kdwWA9VbiY7wxk9TmMzYcMx9YYkqjOKFI26SvFkL\njUUvw6P/p+H/Fj52QNkjJ67Zy3Zx4uwFtE3Mfnka1ywvMFH8Y1x3GzOvZgeJrlxx\n5aKI9BUtCniAIyD66E8awfub1dLY7gph5A7UqyuhVMFS3RSpqyTbjAx4s5dCs+ZS\np8SN+rATX7f0IrjE9wRB4M7nr8YMF7iFQmebU5/bXqGxNlGjAxWkjK9rDpjCXg1t\nwJSbfZcvDFZmPZyJ0y34IXhP0tCng8uzNlbLDOamaQKBgQDu80fpZdelDufOSNO3\nP7VO3g7behTrDXKCCfb7HKRlp7F2Sdvw1WQF5iMsq6RkuWQkZ36TZnby2q4shSWF\nSqUNoilSyXSBBnVXWoWH0o3OEIpQwg9pdQpxwzF5pflYn/bPRQlRNpTkEq7MPVPC\n+MUc+4TFRZ8D+GwVrdd73IL/+QKBgQDh8UYOlAr07M+V/P6hosMN+CsMLbxNXy6Y\nSjn7wZC2LBlcNxiYkl3Tc+a1R+QSIKgALXgvvgGNbePw8U5XoheNw+hsvJvhUhA9\nRo3pcMbNbJ6K/RMMvI6QS76tmXpi3TPP+Ml5zQfEGcwLqLpVFDiYerONCrxe8rp6\n6AvuTiS4tQKBgQCMj+AFlDs+hX4nAwBIE9n8AvSKd05G1yo9BM+c+ERc6ECkbN5M\n1bp5HeAjLvUNq2EVaSw0WVovkiRTXB+uQTLGylW0tX0rSTlNoZpbQ6jXRzOWPhIC\n3y69rS01ekUrtS3iz6GjfJApejQJQSo8z0pkujBoO4RHOaObPSA9ZIJLQQKBgH0a\n22+3CVoUxdyG+XcGaHqTr0JPELTGv0YT04dS5o34XRJyb2wLn2g2BMjbxa1D58Ix\naxsEWle1QUFoW7iqR+B3WXrb9HQOvG8xYeKgT3PvcNoEx0eGIGpFho8ZLGsRkF7X\noreOj35FynWqN4Jkb/H9/u1ZxHPOcvMbCYAqRKsBAoGBAMrPsziw1XkoUIg9MlEx\nhWY0AvC6eyQIAzLf/KpANTqNPblTYaBgvpvwVvNo/Vqm+PAZauSPL1ikXenZ5ttG\nFN/vBed0aAJJpnHL6IwvAAPJVT4rEnoLFg7bQtjNmESZf2UPmbpbvSfP7yVaXKX0\nybb1oHtDkiQWMdSZnh6zc/Z8\n-----END PRIVATE KEY-----\n",
-  "client_email": "ux-enricher@uxenricher.iam.gserviceaccount.com",
-  "client_id": "112755320160250973346",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ux-enricher%40uxenricher.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+  "private_key_id": "*****************************************",
+  "private_key": "\n-----END PRIVATE KEY-----\n",
+  "client_email": "-----------------------------------",
+  "client_id": "------------------------",
+  "auth_uri": "h---------------------",
+  "token_uri": "-----------------------------",
+  "auth_provider_x509_cert_url": "------------------------------",
+  "client_x509_cert_url": "---------------------------------------------------------------------",
+  "universe_domain": "------------------------------------"
 }
